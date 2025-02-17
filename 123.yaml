@@ -1,0 +1,87 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {name: vmesstcp, server: 45.66.63.69, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 2, server: 45.66.63.19, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 3, server: 45.66.63.89, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 4, server: 45.66.63.48, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 5, server: 45.66.63.159, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 6, server: 128.65.172.169, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 7, server: 128.65.172.251, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: vmesstcp 8, server: 128.65.172.84, port: 18000, client-fingerprint: chrome, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: OK1, server: 104.16.187.84, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK2, server: 172.64.80.100, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK3, server: 162.159.49.15, port: 2052, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK4, server: 172.64.87.197, port: 2052, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK5, server: 104.16.254.130, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK6, server: 104.16.195.120, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK7, server: 104.16.242.171, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK8, server: 104.16.81.110, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK9, server: 104.16.216.118, port: 80, client-fingerprint: randomized, type: vless, uuid: d10cc61d-b40f-4f0f-8382-27470bb359d1, tls: false, tfo: false, skip-cert-verify: false, servername: aaa.ciaooo55.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aaa.ciaooo55.workers.dev}}}
+  - {name: OK自建1, server: 104.16.195.120, port: 2052, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建2, server: 172.67.236.187, port: 8080, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建3, server: 172.67.79.60, port: 2052, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建4, server: 188.114.99.202, port: 2052, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建5, server: 172.67.52.63, port: 80, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建6, server: 172.64.80.100, port: 80, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+  - {name: OK自建7, server: 104.16.254.130, port: 80, client-fingerprint: randomized, type: vless, uuid: 37aaf808-03b3-4fe5-9680-98302eb29315, tls: false, tfo: false, skip-cert-verify: false, servername: qwweeerrrr.18715260182.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: qwweeerrrr.18715260182.workers.dev}}}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - vmesstcp
+      - vmesstcp 2
+      - vmesstcp 3
+      - vmesstcp 4
+      - vmesstcp 5
+      - vmesstcp 6
+      - vmesstcp 7
+      - vmesstcp 8
+      - OK1
+      - OK2
+      - OK3
+      - OK4
+      - OK5
+      - OK6
+      - OK7
+      - OK8
+      - OK9
+      - OK自建1
+      - OK自建2
+      - OK自建3
+      - OK自建4
+      - OK自建5
+      - OK自建6
+      - OK自建7
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
