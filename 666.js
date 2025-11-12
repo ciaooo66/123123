@@ -4,19 +4,15 @@
 *******************************
 [rewrite_local]
 ^https:\/\/api\.train2win\.cn\/v1\/users\/myInfo url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/xintiao.js
-# 汽车补贴活动解锁 - API5 节点
-^https:\/\/api5-normal-sinfonlineb\.dcarapi\.com\/motor\/feoffline\/lynx_gov_subsidy\/api\/v\d+\/get_activity_list url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
 
-# 汽车补贴活动解锁 - API5 节点活动信息
-^https:\/\/api5-normal-sinfonlineb\.dcarapi\.com\/motor\/blitz\/activity\/\d+\/get_activity_info url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
+# 汽车补贴活动解锁 - API5 节点
+^https:\/\/api5-normal-sinfonlineb\.dcarapi\.com url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
 
 # 汽车补贴活动解锁 - API3 节点  
-^https:\/\/api3-normal-sinfonlineb\.dcarapi\.com\/motor\/feoffline\/lynx_gov_subsidy\/api\/v\d+\/get_activity_list url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
+^https:\/\/api3-normal-sinfonlineb\.dcarapi\.com url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
 
-# 汽车补贴活动解锁 - API3 节点活动信息
-^https:\/\/api3-normal-sinfonlineb\.dcarapi\.com\/motor\/blitz\/activity\/\d+\/get_activity_info url script-response-body https://raw.githubusercontent.com/ciaooo66/123123/refs/heads/main/666.js
 [mitm]
-hostname = api5-normal-sinfonlineb.dcarapi.com
+hostname = api5-normal-sinfonlineb.dcarapi.com, api3-normal-sinfonlineb.dcarapi.com
 *
 *
 */
@@ -165,4 +161,5 @@ function mainProcess() {
 mainProcess();
 
 console.log("汽车补贴活动解锁脚本执行完成");
+
 $done({body: JSON.stringify(obj)});
